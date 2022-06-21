@@ -1,0 +1,59 @@
+
+
+{
+  "shoes": [
+    { 
+		"id": 1, 
+	    "category": "shoes", 
+	    "image": "https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/20790/183133/Men-shoes-2018-fashion-new-arrivals-warm-winter-shoes-men-High-quality-frosted-suede-shoes-men__70277.1545975473.jpg" ,
+		"price": 94.95,
+		"skus": [
+				{"sku": "17", "size": 7},
+				{"sku": "18", "size": 8}
+		],
+		"description": "this is a hiking shoe"
+	},
+	{ 
+		"id": 2, 
+	    "category": "shoes", 
+	    "image": "https://i.pinimg.com/736x/e1/87/c2/e187c2794d9467d8cd9e4adae69e39c7--canvas-sneakers-men-sneakers.jpg" ,
+		"price": 104.95,
+		"skus": [
+			{"sku": "19", "size": 8},
+			{"sku": "20", "size": 8},
+			{"sku": "21", "size": 9}
+		],
+		"description": "this is a hiking shoe"
+	},
+	{ 
+		"id": 3, 
+	    "category": "shoes", 
+	    "image": "https://m.media-amazon.com/images/I/71D9ImsvEtL._UY500_.jpg" ,
+		"price": 120.95,
+		"skus": [
+			{"sku": "22", "size": 7},
+			{"sku": "23", "size": 7},
+			{"sku": "24", "size": 8},
+			{"sku": "25", "size": 9}
+			
+		],
+		"description": "this is a hiking shoe"
+	},
+	{ 
+		"id": 4, 
+	    "category": "shoes", 
+	    "image": "https://5.imimg.com/data5/QB/AH/JD/ANDROID-74175926/product-jpeg-500x500.jpg" ,
+		"price": 89.95,
+		"skus": [
+			{"sku": "26", "size": 7},
+			{"sku": "27", "size": 8}
+		],
+		"description": "this is a hiking shoe"
+	}
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+

@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "shoes",
+      "image": "shoe1.jpg",
+      "price": 94.95,
+      "skus": [
+        {
+          "sku": "18",
+          "size": 8
+        }
+      ],
+      "description": "this is a hiking shoe"
+    },
+    {
+      "id": 2,
+      "category": "shoes",
+      "image": "shoe2.jpg",
+      "price": 104.95,
+      "skus": [
+        {
+          "sku": "19",
+          "size": 9
+        }
+      ],
+      "description": "this is a hiking shoe"
+    },
+    {
+      "id": 3,
+      "category": "shoes",
+      "image": "shoe3.jpg",
+      "price": 120.95,
+      "skus": [
+        {
+          "sku": "20",
+          "size": 9
+        }
+      ],
+      "description": "this is a hiking shoe"
+    },
+    {
+      "id": 4,
+      "category": "shoes",
+      "image": "shoe2.jpg",
+      "price": 89.95,
+      "skus": [
+        {
+          "sku": "18",
+          "size": 8
+        }
+      ],
+      "description": "this is a hiking shoe"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

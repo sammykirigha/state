@@ -1,13 +1,21 @@
 import Products from "./products";
-
+import {Routes, Route} from 'react-router-dom'
+import Detail from "./Detail";
+import Cart from "./Cart";
+import Header from "./Header";
 
 function App() {
    
     return (
         <div className="mx-4 mt-10">
-            <h2>My logo and links</h2>
+            <Header />
             <main className="mt-10">
-                <Products />
+                <Routes>
+                    <Route path="/" element={<h2>welcome back</h2>} />
+                    <Route path="/:category"  element={<Products />} />
+                 <Route path="/:category/:id" element={<Detail />} />
+                 <Route path="/cart" element={<Cart /> } />
+                </Routes>
             </main>
         </div>
     );

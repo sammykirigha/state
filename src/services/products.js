@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3000/"
+export const baseUrl = "http://localhost:3000/"
 
 export async function getProducts(category){
 	const {data} = await axios.get(baseUrl + category)
@@ -8,6 +8,6 @@ export async function getProducts(category){
 }
 
 export async function getProduct(id){
-	const {data} = await fetch(baseUrl + id);
+	const {data} = await axios.get(baseUrl + id);
 	 return data
 }

@@ -3,8 +3,32 @@ import {Routes, Route} from 'react-router-dom'
 import Detail from "./Detail";
 import Cart from "./Cart";
 import Header from "./Header";
+import { useState } from "react";
 
 function App() {
+    const [cart, setCart] = useState([])
+    console.log(cart);
+
+    const addToCart = (id, sku) => {
+        setCart((items) => {
+            const itemInCart = items.find((i) => i.sku === sku);
+            if (itemInCart) {
+                //return a new array with the matching item replaced
+                return items.map((i) => i.sku === sku ? {...i, quantity: i.quantity + 1} : i)
+            } else {
+                return [...items, {id, sku, quantity: 1}]
+            }
+        })
+    }
+
+    const updateQuantity = (sku, quantity) => {
+        setCart((items) => {
+            if (quantity === 0) {
+                return items.filter((i) => i.sku !== sku)
+            }
+           return items.map((i) => (i.sku === sku ? {...i, quantity} : i))
+       })
+    }
    
     return (
         <div className="mx-4 mt-10">
@@ -13,8 +37,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<h2>welcome back</h2>} />
                     <Route path="/:category"  element={<Products />} />
-                 <Route path="/:category/:id" element={<Detail />} />
-                 <Route path="/cart" element={<Cart /> } />
+                 <Route path="/:category/:id" element={<Detail addToCart={addToCart} />} />
+                 <Route path="/cart" element={<Cart cart={cart} updateQuantity={updateQuantity} /> } />
                 </Routes>
             </main>
         </div>

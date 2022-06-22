@@ -4,7 +4,7 @@ const Header = () => {
 	const activestyle = {
 		color: "purple"
 	}
-  return (
+  return ( 
 	  <div>
 		  <ul  className='flex flex-row'>
 			  <li className=' text-md'>

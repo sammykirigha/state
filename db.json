@@ -4,6 +4,7 @@
   "shoes": [
     { 
 		"id": 1, 
+		"name": "Explorer",
 	    "category": "shoes", 
 	    "image": "https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/20790/183133/Men-shoes-2018-fashion-new-arrivals-warm-winter-shoes-men-High-quality-frosted-suede-shoes-men__70277.1545975473.jpg" ,
 		"price": 94.95,
@@ -15,6 +16,7 @@
 	},
 	{ 
 		"id": 2, 
+		"name": "Explorer",
 	    "category": "shoes", 
 	    "image": "https://i.pinimg.com/736x/e1/87/c2/e187c2794d9467d8cd9e4adae69e39c7--canvas-sneakers-men-sneakers.jpg" ,
 		"price": 104.95,
@@ -27,6 +29,7 @@
 	},
 	{ 
 		"id": 3, 
+		"name": "Explorer",
 	    "category": "shoes", 
 	    "image": "https://m.media-amazon.com/images/I/71D9ImsvEtL._UY500_.jpg" ,
 		"price": 120.95,
@@ -41,6 +44,7 @@
 	},
 	{ 
 		"id": 4, 
+		"name": "Explorer",
 	    "category": "shoes", 
 	    "image": "https://5.imimg.com/data5/QB/AH/JD/ANDROID-74175926/product-jpeg-500x500.jpg" ,
 		"price": 89.95,

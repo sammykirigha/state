@@ -28,7 +28,7 @@ function Products() {
 
     const renderProduct = (p) => {
         return (
-            <div key={p.id} className="border  p-4">
+            <div key={p.id} className="border p-4">
                 <Link to={`/${category}/${p.id}`}>
                     <img
                         src={p.image}
